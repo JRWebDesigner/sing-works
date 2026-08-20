@@ -23,7 +23,7 @@ export default function Header() {
           href="/"
           className="text-lg font-extrabold tracking-tight text-neutral-950"
         >
-          SIGN WORKS
+          Graphic Lab LDN
         </Link>
 
         {/* Desktop nav */}
