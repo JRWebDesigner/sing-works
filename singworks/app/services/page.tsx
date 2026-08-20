@@ -12,6 +12,14 @@ type Service = {
 
 const SERVICES: Service[] = [
   {
+    title: "Concept & Creative Direction",
+    description:
+      "We can get involved from the very beginning — helping develop ideas, refine logos, create graphics and shape the visual direction of a project.Whether you have an established brand or just an initial concept, we can help turn it into a clear, considered visual approach that works across signage, graphics, spaces and installations.",
+    items: [
+      
+    ],
+  },
+  {
     title: "Shopfront & Architectural Signage",
     description:
       "We design, manufacture and install premium signage for shops, restaurants, hotels, offices and commercial spaces. From clean contemporary lettering to statement illuminated signs, every project is made to suit the brand and the building.",
