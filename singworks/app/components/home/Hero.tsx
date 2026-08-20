@@ -39,6 +39,7 @@ export default function Hero() {
 
         {/* RIGHT: Collage */}
         <div className="relative">
+          <div className="absolute w-[100%] h-[100%] bg-[url('/fondo.jpg')] rounded-full" />
           {/* ambient gradient blob */}
           <div
             aria-hidden
