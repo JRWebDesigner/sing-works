@@ -244,72 +244,31 @@ function ServicesHero() {
 }
 
 function ServicesList() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
   return (
     <section className="mx-auto max-w-[1400px] border-t border-neutral-200 px-6">
-      {SERVICES.map((service, index) => {
-        const isOpen = openIndex === index;
-        return (
-          <div key={service.title} className="border-b border-neutral-200">
-            <button
-              onClick={() => setOpenIndex(isOpen ? null : index)}
-              className="flex w-full items-center gap-6 py-7 text-left"
-              aria-expanded={isOpen}
-            >
-              <span className="w-10 shrink-0 text-[13px] font-medium text-neutral-400">
-                {String(index + 1).padStart(2, "0")}
-              </span>
+      {SERVICES.map((service, index) => (
+        <div
+          key={service.title}
+          className="grid gap-4 border-b border-neutral-200 py-10 sm:grid-cols-[40px_1fr] sm:gap-8 lg:grid-cols-[40px_320px_1fr]"
+        >
 
-              <span className="flex-1 text-xl font-medium tracking-tight text-neutral-950 sm:text-2xl">
-                {service.title}
-              </span>
+          <h3 className="text-xl font-medium tracking-tight text-neutral-950 sm:text-3xl">
+            {service.title}
+          </h3>
 
-              <span
-                className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
-                  isOpen
-                    ? "rotate-45 bg-neutral-950"
-                    : "bg-neutral-100 group-hover:bg-neutral-200"
-                }`}
-              >
-                <Plus
-                  className={`h-4 w-4 ${
-                    isOpen ? "text-lime-300" : "text-neutral-950"
-                  }`}
-                />
-              </span>
-            </button>
-
-            <div
-              className={`grid overflow-hidden transition-all duration-300 ease-in-out ${
-                isOpen ? "grid-rows-[1fr] pb-8" : "grid-rows-[0fr]"
-              }`}
-            >
-              <div className="min-h-0">
-                <div className="grid gap-8 pl-16 sm:grid-cols-[1fr_1.2fr]">
-                  <p className="text-[15px] leading-relaxed text-neutral-500">
-                    {service.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {service.items.map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-neutral-200 px-3 py-1.5 text-[13px] text-neutral-700"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="sm:col-start-2 lg:col-start-3">
+            <p className="text-[15px] leading-relaxed text-neutral-500">
+              {service.description}
+            </p>
+            <p className="mt-3 text-[14px] leading-relaxed text-neutral-400">
+              {service.items.join(", ")}.
+            </p>
           </div>
-        );
-      })}
+        </div>
+      ))}
     </section>
   );
 }
-
 function ClosingCTA() {
   return (
     <section className="mx-auto max-w-[1400px] px-6 py-24">
