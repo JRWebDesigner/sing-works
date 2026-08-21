@@ -7,13 +7,13 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-white">
       {/* fondo difuminado detrás de todo el hero */}
-      <div aria-hidden className="absolute inset-0 z-0">
+      <div aria-hidden className="absolute inset-0 z-0 w-[50%] m-auto">
         <Image
           src="/fondo.jpg"
           alt=""
           fill
           priority
-          className="object-cover opacity-70"
+          className="object-cover opacity-50 "
         />
         {/* funde los bordes hacia el blanco de la sección */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_25%,_white_90%)]" />
@@ -23,13 +23,13 @@ export default function Hero() {
         {/* LEFT: Text */}
         <div className="flex flex-col justify-center">
           <h1 className="text-[3.25rem] font-medium leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl">
-            We make
+            Signage that
             <br />
-            brands
+            makes brands
             <br />
             <span className="italic font-light">impossible</span>
             <br />
-            to ignore.
+            impossible to ignore.
           </h1>
 
           <p className="mt-6 max-w-[340px] text-[15px] leading-relaxed text-neutral-800">
