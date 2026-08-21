@@ -51,14 +51,12 @@ function StudioHero() {
       </span>
 
       <h1 className="max-w-3xl text-[3rem] font-medium leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl">
-        A London-based creative production studio bringing brands{" "}
+        A London sign and graphics studio bringing brands{" "}
         <span className="italic font-light">into the physical world.</span>
       </h1>
 
       <p className="mt-8 max-w-xl text-[15px] leading-relaxed text-neutral-500">
-        We work with independent businesses, designers, agencies and
-        established brands to create considered, high-impact work for real
-        spaces and environments.
+        We design, make and install signage, graphics and visual branding for independent businesses, designers, agencies and established brands.
       </p>
     </section>
   );
@@ -70,18 +68,17 @@ function SectionsList() {
       {SECTIONS.map((section, index) => (
         <div
           key={section.title}
-          className="grid gap-4 border-b border-neutral-200 py-12 sm:grid-cols-[40px_1fr] sm:gap-8 lg:grid-cols-[40px_320px_1fr]"
+          className="flex flex-col gap-4 border-b border-neutral-200 py-12"
         >
-
-          <h2 className="text-xl font-medium tracking-tight text-neutral-950 sm:text-2xl">
+          <h2 className="text-2xl font-medium tracking-tight text-neutral-950 sm:text-3xl">
             {section.title}
           </h2>
 
-          <div className="flex flex-col gap-4 sm:col-start-2 lg:col-start-3">
+          <div className="flex flex-col gap-4">
             {section.paragraphs.map((p, i) => (
               <p
                 key={i}
-                className="max-w-2xl text-[15px] leading-relaxed text-neutral-500"
+                className=" text-[15px] leading-relaxed text-neutral-500"
               >
                 {p}
               </p>

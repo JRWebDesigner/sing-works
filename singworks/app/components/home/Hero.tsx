@@ -1,11 +1,25 @@
 // components/home/hero.tsx
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-white">
-      <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-[420px_1fr] lg:gap-8 lg:py-10">
+      {/* fondo difuminado detrás de todo el hero */}
+      <div aria-hidden className="absolute inset-0 z-0">
+        <Image
+          src="/fondo.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-70"
+        />
+        {/* funde los bordes hacia el blanco de la sección */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_25%,_white_90%)]" />
+      </div>
+
+      <div className="relative mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-[420px_1fr] lg:gap-8 lg:py-10 ">
         {/* LEFT: Text */}
         <div className="flex flex-col justify-center">
           <h1 className="text-[3.25rem] font-medium leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl">
@@ -18,7 +32,7 @@ export default function Hero() {
             to ignore.
           </h1>
 
-          <p className="mt-6 max-w-[340px] text-[15px] leading-relaxed text-neutral-500">
+          <p className="mt-6 max-w-[340px] text-[15px] leading-relaxed text-neutral-800">
             Premium signage, illuminated letters, acrylic signs, printed
             graphics, aluminium panels and visual branding—designed and
             installed to elevate your brand in the real world.
@@ -39,13 +53,6 @@ export default function Hero() {
 
         {/* RIGHT: Collage */}
         <div className="relative">
-          <div className="absolute w-[100%] h-[100%] bg-[url('/fondo.jpg')] rounded-full" />
-          {/* ambient gradient blob */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute -inset-x-10 -inset-y-10 -z-10 rounded-[3rem] bg-[radial-gradient(ellipse_at_top_right,_#d4f542_0%,_#eef9c8_45%,_rgba(255,255,255,0)_75%)] blur-2xl"
-          />
-
           <div className="relative mx-auto aspect-[725/610] w-full max-w-[725px]">
             {/* 2. Center fluted panel with glowing S */}
             <div

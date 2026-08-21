@@ -257,21 +257,19 @@ function ServicesList() {
       {SERVICES.map((service, index) => (
         <div
           key={service.title}
-          className="grid gap-4 border-b border-neutral-200 py-10 sm:grid-cols-[40px_1fr] sm:gap-8 lg:grid-cols-[40px_320px_1fr]"
+          className="flex flex-col gap-3 border-b border-neutral-200 py-10"
         >
-
-          <h3 className="text-xl font-medium tracking-tight text-neutral-950 sm:text-3xl">
+          <h3 className="text-2xl font-medium tracking-tight text-neutral-950 sm:text-3xl">
             {service.title}
           </h3>
 
-          <div className="sm:col-start-2 lg:col-start-3">
-            <p className="text-[15px] leading-relaxed text-neutral-500">
-              {service.description}
-            </p>
-            <p className="mt-3 text-[14px] leading-relaxed text-neutral-400">
-              {service.items.join(", ")}.
-            </p>
-          </div>
+          <p className=" text-[15px] leading-relaxed text-neutral-500">
+            {service.description}
+          </p>
+
+          <p className="text-[14px] leading-relaxed text-neutral-400">
+            {service.items.join(", ")}.
+          </p>
         </div>
       ))}
     </section>
