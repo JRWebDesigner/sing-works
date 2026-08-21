@@ -23,7 +23,7 @@ export default function Hero() {
         {/* LEFT: Text */}
         <div className="flex flex-col justify-center">
           <h1 className="text-[3.25rem] font-light leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl">
-            Signage that
+            Signs that
             <br />
             makes brands
             <br />
