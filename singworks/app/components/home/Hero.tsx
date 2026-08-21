@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-white">
       {/* fondo difuminado detrás de todo el hero */}
-      <div aria-hidden className="absolute inset-0 z-0 w-[50%] m-auto">
+      <div aria-hidden className="absolute inset-0 z-0 h-[50%] md:h-auto md:w-[50%] m-auto">
         <Image
           src="/fondo.jpg"
           alt=""
@@ -29,7 +29,7 @@ export default function Hero() {
             <br />
             <span className="italic font-light">impossible</span>
             <br />
-            impossible to ignore.
+             to ignore.
           </h1>
 
           <p className="mt-6 max-w-[340px] text-[15px] leading-relaxed text-neutral-800">
