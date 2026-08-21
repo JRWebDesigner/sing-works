@@ -51,7 +51,8 @@ function StudioHero() {
       </span>
 
       <h1 className="max-w-3xl text-[3rem] font-medium leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl">
-        A London sign and graphics studio bringing brands{" "}
+        A London <span className="italic font-light">sign</span> and graphics
+        studio bringing brands{" "}
         <span className="italic font-light">into the physical world.</span>
       </h1>
 
