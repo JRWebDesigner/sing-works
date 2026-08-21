@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-white">
       {/* fondo difuminado detrás de todo el hero */}
-      <div aria-hidden className="absolute inset-0 z-0 h-[65%] md:h-auto md:w-[50%] m-auto">
+      <div aria-hidden className="absolute inset-0 z-0 h-[65%] md:h-auto md:w-[50%] md:ml-[34%]">
         <Image
           src="/fondo.jpg"
           alt=""
@@ -25,7 +25,7 @@ export default function Hero() {
           <h1 className="text-[3.25rem] font-light leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl">
             Signs that
             <br />
-            makes brands
+            make brands
             <br />
             <span className="italic font-light">impossible</span>
             <br />
