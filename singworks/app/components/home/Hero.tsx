@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-[420px_1fr] lg:gap-8 lg:py-10 ">
         {/* LEFT: Text */}
         <div className="flex flex-col justify-center">
-          <h1 className="text-[3.25rem] font-medium leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl">
+          <h1 className="text-[3.25rem] font-light leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl">
             Signage that
             <br />
             makes brands
