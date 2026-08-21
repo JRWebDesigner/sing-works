@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-white">
       {/* fondo difuminado detrás de todo el hero */}
-      <div aria-hidden className="absolute inset-0 z-0 h-[65%] md:h-auto md:w-[50%] md:ml-[34%]">
+      <div aria-hidden className="absolute inset-0 z-0 h-[65%] md:h-auto md:w-[50%] mt-[40%] md:mt-auto md:ml-[34%]">
         <Image
           src="/fondo.jpg"
           alt=""
